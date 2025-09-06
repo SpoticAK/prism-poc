@@ -1,0 +1,115 @@
+Product Name,Supplier,Cost,Region,Verified,MOQ,Rating
+Product A,Supplier Alpha,50,Delhi,Yes,100,4.5
+,Supplier Beta,52,Delhi NCR,Yes,150,4.1
+,Supplier Gamma,48,Gurgaon,No,200,3.8
+Product B,Supplier Delta,42,Delhi,Yes,50,4
+,Supplier Epsilon,44,Noida,Yes,100,3.7
+,Supplier Zeta,40,Gurgaon,No,200,3.3
+Product C,Supplier Eta,60,Delhi,Yes,80,4.4
+,Supplier Theta,58,Delhi NCR,No,120,3.9
+,Supplier Iota,62,Gurgaon,Yes,300,3.7
+Product D,Supplier Kappa,35,Delhi,Yes,30,3.6
+,Supplier Lambda,38,Noida,No,50,3.5
+,Supplier Mu,40,Gurgaon,Yes,60,3.3
+Product E,Supplier Nu,55,Delhi,Yes,100,4.9
+,Supplier Xi,57,Delhi NCR,Yes,150,4.7
+,Supplier Omicron,59,Gurgaon,No,200,4.3
+Product F,Supplier Pi,48,Delhi,Yes,80,4
+,Supplier Rho,50,Noida,No,150,3.9
+,Supplier Sigma,47,Gurgaon,Yes,250,3.5
+Product G,Supplier Tau,42,Delhi,Yes,120,4.1
+,Supplier Upsilon,44,Gurgaon,No,200,3.7
+,Supplier Phi,46,Delhi NCR,Yes,150,3.8
+Product H,Supplier Chi,38,Delhi,Yes,50,3.4
+,Supplier Psi,40,Noida,No,80,3.2
+,Supplier Omega,42,Gurgaon,Yes,100,3
+Product I,Supplier Alpha,58,Delhi,Yes,100,4.6
+,Supplier Beta,60,Delhi NCR,Yes,250,4.2
+,Supplier Gamma,62,Gurgaon,No,300,4
+Product J,Supplier Delta,45,Delhi,No,100,3.9
+,Supplier Epsilon,47,Noida,Yes,200,3.8
+,Supplier Zeta,50,Gurgaon,Yes,150,3.7
+Product K,Supplier Eta,55,Delhi,Yes,90,4.3
+,Supplier Theta,58,Delhi NCR,No,140,3.8
+,Supplier Iota,60,Gurgaon,Yes,200,4.1
+Product L,Supplier Kappa,42,Delhi,No,110,3.5
+,Supplier Lambda,44,Noida,Yes,180,3.7
+,Supplier Mu,45,Gurgaon,Yes,200,3.9
+Product M,Supplier Nu,40,Delhi,Yes,80,3.4
+,Supplier Xi,42,Delhi NCR,No,150,3.2
+,Supplier Omicron,45,Gurgaon,Yes,250,3.1
+Product N,Supplier Pi,58,Delhi,Yes,80,4
+,Supplier Rho,60,Delhi NCR,Yes,130,4.3
+,Supplier Sigma,62,Gurgaon,No,180,4
+Product O,Supplier Chi,43,Delhi,Yes,50,3.8
+,Supplier Psi,45,Noida,No,90,3.7
+,Supplier Omega,40,Gurgaon,Yes,70,3.5
+Product P,Supplier Alpha,55,Delhi,Yes,100,4.6
+,Supplier Beta,58,Delhi NCR,Yes,140,4.2
+,Supplier Gamma,60,Gurgaon,No,200,4.1
+Product Q,Supplier Delta,52,Delhi,Yes,70,3.9
+,Supplier Epsilon,54,Noida,No,100,3.7
+,Supplier Zeta,56,Gurgaon,Yes,120,3.6
+Product R,Supplier Eta,35,Delhi,Yes,40,3.5
+,Supplier Theta,37,Delhi NCR,Yes,80,3.4
+,Supplier Iota,39,Gurgaon,No,90,3.3
+Product S,Supplier Kappa,60,Delhi,Yes,110,4.7
+,Supplier Lambda,63,Noida,Yes,140,4.3
+,Supplier Mu,65,Gurgaon,No,180,4.1
+Product T,Supplier Nu,45,Delhi,Yes,90,4
+,Supplier Xi,47,Delhi NCR,No,110,3.8
+,Supplier Omicron,50,Gurgaon,Yes,130,3.7
+Product U,Supplier Pi,40,Delhi,Yes,150,3.6
+,Supplier Rho,43,Noida,Yes,180,3.7
+,Supplier Sigma,45,Gurgaon,No,200,3.9
+Product V,Supplier Chi,35,Delhi,Yes,170,3.5
+,Supplier Psi,37,Delhi NCR,No,190,3.3
+,Supplier Omega,40,Gurgaon,Yes,200,3.1
+Product W,Supplier Alpha,58,Delhi,Yes,100,4.2
+,Supplier Beta,60,Noida,Yes,120,4
+,Supplier Gamma,62,Gurgaon,No,140,3.9
+Product X,Supplier Delta,50,Delhi,Yes,100,4.1
+,Supplier Epsilon,52,Delhi NCR,Yes,130,4
+,Supplier Zeta,54,Gurgaon,No,150,3.8
+Product Y,Supplier Eta,47,Delhi,Yes,120,3.7
+,Supplier Theta,49,Noida,No,140,3.6
+,Supplier Iota,51,Gurgaon,Yes,160,3.5
+Product Z,Supplier Kappa,55,Delhi,Yes,140,4.4
+,Supplier Lambda,57,Delhi NCR,Yes,160,4.2
+,Supplier Mu,59,Gurgaon,No,180,4
+Product AA,Supplier Nu,54,Delhi,Yes,130,4.1
+,Supplier Xi,56,Delhi NCR,Yes,150,4
+,Supplier Omicron,58,Gurgaon,No,170,3.9
+Product AB,Supplier Pi,60,Delhi,Yes,140,4.3
+,Supplier Rho,62,Noida,No,160,4.1
+,Supplier Sigma,64,Gurgaon,Yes,180,3.8
+Product AC,Supplier Chi,49,Delhi,Yes,110,3.5
+,Supplier Psi,51,Delhi NCR,No,130,3.3
+,Supplier Omega,53,Gurgaon,Yes,140,3.2
+Product AD,Supplier Alpha,55,Delhi,Yes,120,4
+,Supplier Beta,57,Noida,Yes,140,3.9
+,Supplier Gamma,59,Gurgaon,No,160,3.7
+Product AE,Supplier Delta,48,Delhi,Yes,100,3.6
+,Supplier Epsilon,50,Delhi NCR,No,120,3.5
+,Supplier Zeta,52,Gurgaon,Yes,140,3.4
+Product AF,Supplier Eta,38,Delhi,Yes,90,3.1
+,Supplier Theta,40,Noida,No,100,3
+,Supplier Iota,42,Gurgaon,Yes,110,2.9
+Product AG,Supplier Kappa,60,Delhi,Yes,150,4.5
+,Supplier Lambda,62,Delhi NCR,Yes,180,4.4
+,Supplier Mu,64,Gurgaon,No,200,4.3
+Product AH,Supplier Nu,44,Delhi,Yes,100,3.8
+,Supplier Xi,46,Noida,No,120,3.7
+,Supplier Omicron,48,Gurgaon,Yes,140,3.6
+Product AI,Supplier Pi,56,Delhi,Yes,130,4.2
+,Supplier Rho,58,Delhi NCR,Yes,150,4.1
+,Supplier Sigma,60,Gurgaon,No,170,4
+Product AJ,Supplier Chi,50,Delhi,Yes,120,3.9
+,Supplier Psi,52,Noida,No,140,3.8
+,Supplier Omega,54,Gurgaon,Yes,160,3.7
+Product AK,Supplier Alpha,46,Delhi,Yes,110,4
+,Supplier Beta,48,Delhi NCR,No,130,3.9
+,Supplier Gamma,50,Gurgaon,Yes,150,3.8
+Product AL,Supplier Delta,60,Delhi,Yes,140,4.3
+,Supplier Epsilon,62,Noida,No,160,4.1
+,Supplier Zeta,64,Gurgaon,No,180,3.9
