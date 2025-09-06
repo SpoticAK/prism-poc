@@ -39,16 +39,17 @@ def score_product(row):
     else:
         score += 3
 
-    # Listing Quality scoring
+    # Updated Listing Quality scoring
     quality = str(row['Listing Quality']).strip().lower()
-    if quality == 'good':
+    if quality == 'poor':
         score += 2
     elif quality == 'average':
         score += 1
+    # Good = 0 points, no addition
 
     return score
 
-# Supplier scoring function with updated rules
+# Supplier scoring function with rules
 def score_supplier(row):
     score = 0
 
@@ -63,7 +64,7 @@ def score_supplier(row):
     if str(row['Verified']).strip().lower() == 'yes':
         score += 4
 
-    # MOQ scoring (handle NA/potential non-integers)
+    # MOQ scoring handling NA or invalid entries
     try:
         moq = int(row['MOQ'])
         if moq <= 100:
@@ -89,7 +90,7 @@ def find_top_supplier(product_name):
 
 product_df['Top Supplier'] = product_df['Product Name'].apply(find_top_supplier)
 
-# Opportunity buckets
+# Opportunity buckets based on Product Score
 def get_opportunity(score):
     if score >= 18:
         return "High"
