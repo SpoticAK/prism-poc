@@ -79,27 +79,32 @@ def score_supplier(row):
 # Calculate product scores
 product_df['Product Score'] = product_df.apply(score_product, axis=1)
 
-# Find top scoring supplier per product
-def find_top_supplier(product_name):
+# Calculate supplier scores and find top supplier for each product
+def find_top_supplier_and_score(product_name):
     matches = supplier_df[supplier_df['Product Name'] == product_name].copy()
     if matches.empty:
-        return "No Supplier Found"
+        return "No Supplier Found", 0
     matches['Supplier Score'] = matches.apply(score_supplier, axis=1)
     top = matches.sort_values('Supplier Score', ascending=False).iloc[0]
-    return f"{top['Supplier']} (Score: {top['Supplier Score']})"
+    return f"{top['Supplier']} (Score: {top['Supplier Score']})", top['Supplier Score']
 
-product_df['Top Supplier'] = product_df['Product Name'].apply(find_top_supplier)
+supplier_info = product_df['Product Name'].apply(find_top_supplier_and_score)
+product_df['Top Supplier'] = supplier_info.apply(lambda x: x[0])
+product_df['Top Supplier Score'] = supplier_info.apply(lambda x: x[1])
 
-# Opportunity buckets based on Product Score
-def get_opportunity(score):
-    if score >= 18:
+# Calculate combined score (Product Score + Top Supplier Score)
+product_df['Combined Score'] = product_df['Product Score'] + product_df['Top Supplier Score']
+
+# Opportunity buckets based on combined score
+def get_opportunity(combined_score):
+    if combined_score >= 18:
         return "High"
-    elif 12 <= score < 18:
+    elif 12 <= combined_score < 18:
         return "Medium"
     else:
         return "Low"
 
-product_df['Opportunity'] = product_df['Product Score'].apply(get_opportunity)
+product_df['Opportunity'] = product_df['Combined Score'].apply(get_opportunity)
 
 # Streamlit dashboard
 st.title("PRISM Product Discovery Dashboard")
@@ -114,7 +119,9 @@ for opportunity, color in zip(['High', 'Medium', 'Low'], ['#90ee90', '#FFFF99', 
             st.markdown(
                 f"<div style='background-color:{color}; padding:12px; border-radius:6px;'>"
                 f"<strong>{row['Product Name']}</strong><br>"
-                f"Score: {row['Product Score']}<br>"
+                f"Combined Score: {row['Combined Score']}<br>"
+                f"Product Score: {row['Product Score']}<br>"
+                f"Supplier Score: {row['Top Supplier Score']}<br>"
                 f"Price: ₹{row['Price']}<br>"
                 f"Monthly Sale: {row['Monthly Sale']}<br>"
                 f"Reviews: {row['Review no']} | Rating: {row['Review Rating']}<br>"
